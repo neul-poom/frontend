@@ -3,9 +3,10 @@ import { useState } from 'react'
 import { Nav, Navbar, Container, Button, Row, Col } from 'react-bootstrap'
 import { Routes, Route } from 'react-router-dom'
 import data from './data/lecture.js'
-import Main from './page/main.js'
-import Signup from './page/signup.js'
-import Login from './page/login.js'
+import Main from './pages/main.js'
+import Signup from './pages/signup.js'
+import Login from './pages/login.js'
+import Myinfo from './pages/myinfo.js'
 
 
 
@@ -23,6 +24,8 @@ function App(){
             <Container>
               <Navbar.Brand href="#home">NeulPoom</Navbar.Brand>
               <Nav className="ms-auto">
+                <Button variant="light">마이페이지</Button>{' '}
+                <Button variant="light">장바구니</Button>{' '}
                 <Button variant="light">로그인</Button>{' '}
                 <Button variant="light">회원가입</Button>{' '}
               </Nav>
@@ -44,8 +47,9 @@ function App(){
               <Login/>
             }/>
 
-
-
+          <Route path="/mypage" element={
+            <Myinfo/>
+          }/>
 
           </Routes>
 

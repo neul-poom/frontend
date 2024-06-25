@@ -1,7 +1,3 @@
-import { useEffect, useState } from "react";
-import { Row, Button, InputGroup, Form } from "react-bootstrap";
-import axios from 'axios';
-import Main from "./main";
 import "./css/signup.css"
 
 
