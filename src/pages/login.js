@@ -2,8 +2,8 @@ import "./css/login.css"
 
 function Login(props) {
     return (
-        <>
-            <div class="login-wrapper">
+        <div style={{marginTop: '55px'}}>
+            <div className="login-wrapper">
             <h2>Login</h2>
             <form method="post" action="서버의url" id="login-form">
                 <input type="text" name="userEmail" placeholder="Email"/>
@@ -11,7 +11,7 @@ function Login(props) {
                 <input type="submit" value="Login"/>
             </form>
             </div>
-        </>
+        </div>
 
     )
 }
