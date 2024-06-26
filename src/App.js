@@ -6,9 +6,7 @@ import data from './data/lecture.js'
 import Main from './pages/main.js'
 import Signup from './pages/signup.js'
 import Login from './pages/login.js'
-import Myinfo from './pages/myinfo.js'
-
-
+import Mypage from './pages/mypage.js'
 
 
 function App(){
