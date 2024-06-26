@@ -1,3 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-item {
+  flex: 1;
+  overflow: auto;
+}
+
+
+
+.slide {
+  margin-top: 55px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  height: 55px;
+  z-index: 100; /* 다른 요소들 위에 표시되도록 */
+}
+
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: lightgray;
+  color: #333;
+  padding: 10px;
+  z-index: 100; /* 다른 요소들 위에 표시되도록 */
+}
+
 .black-nav {
   background : black;
   width : 100%;
