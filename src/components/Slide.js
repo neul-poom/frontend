@@ -2,7 +2,7 @@ import { React, useEffect } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './Slide.css';
+import './css/Slide.css';
 
 
 const SimpleSlider = () => {
@@ -35,16 +35,16 @@ const SimpleSlider = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: '55px' }}>
+    <div className="layout-container">
       <Slider {...settings}>
-        <div className="layout-item">
-          <img src="https://cdn.inflearn.com/public/courses/326311/cover/7e5ce977-edea-4e65-a356-299c0a836cd7/%EB%8C%80%EC%84%B8%EB%8A%94%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20(Helm%ED%8E%B8)%202.jpg?w=420" />
+        <div className="layout-image">
+          <img src="https://cdn.inflearn.com/public/main_sliders/eac820ce-c6fd-47c9-908c-1a8693b50205/%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20(6).png" />
         </div>
-        <div className="layout-item">
-          <img src="https://cdn.inflearn.com/public/course-325848-cover/eb1bbb3f-adec-4b2f-a295-c0799dae4b48?w=420" />
+        <div className="layout-image">
+          <img src="https://cdn.inflearn.com/public/main_sliders/fcc94361-15e2-4bd3-845e-fea6b7e7bcd8/TB_%ED%9E%88%EB%B0%B0_521.png" />
         </div>
-        <div className="layout-item">
-        <img src={"https://cdn.inflearn.com/public/courses/326544/cover/02f637a6-7369-4ab0-b638-3eccd9c339db/326544-eng.png?w=420"}/>
+        <div className="layout-image">
+        <img src={"https://cdn.inflearn.com/public/main_sliders/fdfd9381-cce4-42ae-a051-ef86bae2feb3/%5B%E1%84%90%E1%85%A2%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC%5D3%E1%84%89%E1%85%B5%E1%84%80%E1%85%A1%E1%86%AB_521.webp"}/>
         </div>
       </Slider>
     </div>
@@ -52,19 +52,3 @@ const SimpleSlider = () => {
 };
 
 export default SimpleSlider;
-
-
-
-    // <div style={{marginTop: '55px'}}>
-    //   <div className='layout-container'>
-    //     <div className='layout-item'>
-    //       <img src={"https://cdn.inflearn.com/public/courses/326311/cover/7e5ce977-edea-4e65-a356-299c0a836cd7/%EB%8C%80%EC%84%B8%EB%8A%94%20%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4%20(Helm%ED%8E%B8)%202.jpg?w=420"}/>
-    //     </div>
-    //     <div className='layout-item'>
-    //     <img src={"https://cdn.inflearn.com/public/course-325848-cover/eb1bbb3f-adec-4b2f-a295-c0799dae4b48?w=420"}/>
-    //     </div>
-    //     <div className='layout-item'>
-    //     <img src={"https://cdn.inflearn.com/public/courses/326544/cover/02f637a6-7369-4ab0-b638-3eccd9c339db/326544-eng.png?w=420"}/>
-    //     </div>
-    //   </div>
-    // </div>
