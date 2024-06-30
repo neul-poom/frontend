@@ -39,3 +39,9 @@
     background-color: #6A24FE;
     margin-top: 20px;
 }
+
+#radio > input[type="radio"] {
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 3px;
+}
