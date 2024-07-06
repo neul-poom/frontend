@@ -1,5 +1,5 @@
 // Note.js
-import '../css/detailLecture/note.css';
+import '../css/detailLecture/noteLecture.css';
 
 
 import { useState } from 'react';

@@ -1,6 +1,6 @@
 import data from '../../data/getReview.js';
 import { useEffect, useState } from 'react';
-import '../css/reviewLecture.css';
+import '../css/detailLecture/reviewLecture.css';
 
 function Review(props) {
 
