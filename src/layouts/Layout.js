@@ -4,14 +4,14 @@ import React from 'react'
 
 function Layout(props) {
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-            <div style={{ flex: '3 0 55px'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', position: 'relative' }}>
+            <div style={{ position: 'sticky', top: 0, zIndex: 1 }}>
                 <Header/>
             </div>
-            <div style={{ flex: '6 0 auto'}}>
+            <div style={{ flex: '1 0 auto', overflow: 'auto', paddingTop: '55px'}}>
                 {props.children}
             </div>
-            <div style={{ flex: '1 0 41px'}}>
+            <div style={{ position: 'sticky', bottom: 0, zIndex: 1 }}>
                 <Footer/>
             </div>
         </div>

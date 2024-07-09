@@ -1,0 +1,25 @@
+  .aside {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 100vw;
+    background-color: #E0F4FF;
+  }
+  
+  .menu {
+    flex: 1;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 600;
+    text-align: center;
+    font-style:inherit;
+    background-color: #E0F4FF;
+    margin: 15px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction:unset;
+    flex: 1;
+    overflow: auto;
+  }
